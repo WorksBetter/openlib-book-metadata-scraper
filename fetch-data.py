@@ -61,7 +61,7 @@ def insert_book_author(supabase, book_id, author_id):
     supabase.table('book_authors').insert({'book_id': book_id, 'author_id': author_id}).execute()
 
 def insert_book_category(supabase, book_id):
-    category_id = "f7985ed7-f1ae-4dae-a7d7-b7340a1a174b"
+    category_id = "f7985ed7-f1ae-4dae-a7d7-b7340a1a174b" # ID of the "sample" category
     supabase.table('book_categories').insert({'book_id': book_id, 'category_id': category_id}).execute()
 
 def process_book(supabase, title, author):
